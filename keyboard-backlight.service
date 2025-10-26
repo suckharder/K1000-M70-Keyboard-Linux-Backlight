@@ -1,0 +1,10 @@
+[Unit]
+Description=Keep keyboard backlight on (via Scroll Lock LED)
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/keyboard-backlight.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
